@@ -21,15 +21,17 @@
     </el-table-column>
   </el-table>
 </template>
+
+
+
 <script lang="ts" setup>
-import { computed, ref } from 'vue';
+import { computed, ref } from 'vue'
 interface User {
   date: string;
   name: string;
   address: string;
 }
 const search = ref('');
-var a;
 const filterTableData = computed(() =>
   tableData.filter(
     (data) =>
