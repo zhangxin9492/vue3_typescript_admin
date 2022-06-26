@@ -29,6 +29,7 @@ interface User {
   address: string;
 }
 const search = ref('');
+var a;
 const filterTableData = computed(() =>
   tableData.filter(
     (data) =>
